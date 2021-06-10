@@ -7,4 +7,25 @@
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name',
    });
+
+
+      var a = document.getElementById('disc-50');
+      a.onclick = function () {
+        Clipboard_CopyTo("T9TTVSQB");
+        var div = document.getElementById('code-success');
+        div.style.display = 'block';
+        setTimeout(function () {
+          document.getElementById('code-success').style.display = 'none';
+        }, 900);
+      };
+
+      function Clipboard_CopyTo(value) {
+        var tempInput = document.createElement("input");
+        tempInput.value = value;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+      }
+   
  
