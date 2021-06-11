@@ -1,4 +1,6 @@
 // JavaScript Document
+
+	$("#commentForm").validate();
     tinymce.init({
       selector: 'textarea',
       plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
@@ -27,5 +29,7 @@
         document.execCommand("copy");
         document.body.removeChild(tempInput);
       }
+
+	
    
  
