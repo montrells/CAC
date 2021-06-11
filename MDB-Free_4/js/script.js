@@ -1,6 +1,6 @@
 // JavaScript Document
 
-	$("#commentForm").validate();
+	
     tinymce.init({
       selector: 'textarea',
       plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
@@ -9,7 +9,7 @@
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name',
    });
-
+   $("#commentForm").validate();
 
       var a = document.getElementById('disc-50');
       a.onclick = function () {
